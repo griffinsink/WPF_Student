@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace WPF_Student
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -25,20 +25,10 @@ namespace WpfApp1
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string idAsString = id.Text;
-            int studentID = Convert.ToInt32(idAsString);
-            string fullName = student.Text;
-            double studentGPA = Convert.ToInt32(gpa.Text);
+            string idAsString = soonerID.Text;
 
-
-            MessageBox.Show($"yo {fullName} your student id is {studentID} and gpa is {studentGPA}");
         }
     }
 }
